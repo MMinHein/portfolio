@@ -1,8 +1,8 @@
 import React from 'react'
-
+import { LoadingScreen } from './components/LoadingScreen'
 function App() {
   return (
-    <div>App</div>
+    <div><LoadingScreen/></div>
   )
 }
 
