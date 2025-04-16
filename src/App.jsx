@@ -1,9 +1,10 @@
-import React from 'react'
-import { LoadingScreen } from './components/LoadingScreen'
+import React, { useState } from "react";
+import { LoadingScreen } from "./components/LoadingScreen";
 function App() {
+  const [loaded, setLoaded] = useState(false);
   return (
-    <div><LoadingScreen/></div>
-  )
+    <div>{!loaded && <LoadingScreen onComplete={() => setLoaded(true)} />}</div>
+  );
 }
 
-export default App
+export default App;
