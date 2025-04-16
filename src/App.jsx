@@ -3,7 +3,14 @@ import { LoadingScreen } from "./components/LoadingScreen";
 function App() {
   const [loaded, setLoaded] = useState(false);
   return (
-    <div>{!loaded && <LoadingScreen onComplete={() => setLoaded(true)} />}</div>
+    <>
+      {!loaded && <LoadingScreen onComplete={() => setLoaded(true)} />}
+      <div
+        className={`min-h-screen transition-opacity duration-700 ${
+          loaded ? "opacity-100" : "opacity-0"
+        } bg-black text-gray-100`}
+      ></div>
+    </>
   );
 }
 
