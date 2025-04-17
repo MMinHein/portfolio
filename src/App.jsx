@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { LoadingScreen } from "./components/LoadingScreen";
-import Navbar from "./components/Navbar";
+import { Navbar } from "./components/Navbar";
 function App() {
   const [loaded, setLoaded] = useState(false);
   return (
