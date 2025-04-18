@@ -7,6 +7,16 @@ export const Navbar = () => {
             {" "}
             minhein<span className="text-blue-500">.tech</span>{" "}
           </a>
+          <div className="w-7 h-5 curser-pointer z-40 md:hidden">&#9776;</div>
+          <div className="hidden md:flex items-center space-x-8">
+            <a
+              href="#home"
+              className="text-gray-300 hover:text-white transition-colors"
+            >
+              {" "}
+              Home{" "}
+            </a>
+          </div>
         </div>
       </div>
     </nav>
